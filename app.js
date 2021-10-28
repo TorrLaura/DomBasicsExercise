@@ -46,5 +46,27 @@ aTag.insertAdjacentElement (`afterend`, h5);
 // 13
 document.querySelector (`ul > li`).remove();
 
-// BONUS
-
+// BONUS COMPLETED ALONG WITH CLASS
+// 14a
+const divs = document.getElementsByTagName(`div`);
+// 14b
+for (d of divs){
+    d.classList.toggle(`background`);
+}
+// 15a
+const hungry = [
+    "Thanks",
+    "A",
+    "Lot",
+    "Now",
+    "I",
+    "Am",
+    "Hungry"
+];
+// 15b
+const end = document.querySelector('body');
+for (a of hungry){
+    const span = document.createElement(`span`);
+    span.innerHTML = `${a}`;
+    end.append(span);
+}
